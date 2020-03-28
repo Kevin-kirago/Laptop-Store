@@ -1,7 +1,15 @@
 import React from "react";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectProducts } from "../redux/products/product.selector";
 
-const Store = () => {
-	return <div className="store"></div>;
+const Store = ({ products }) => {
+	console.log(products);
+	return <div className="store">Store</div>;
 };
 
-export default Store;
+const mapStateToProps = createStructuredSelector({
+	products: selectProducts
+});
+
+export default connect(mapStateToProps)(Store);

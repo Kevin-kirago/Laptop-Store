@@ -1,43 +1,43 @@
 // backgrounds images
-import Product_1 from "./images/bg-1.png";
-import Product_2 from "./images/bg-2.jpg";
-import Product_3 from "./images/bg-3.jpg";
-import Product_4 from "./images/bg-4.jpg";
-import Product_5 from "./images/bg-5.jpg";
-import Product_6 from "./images/bg-5.jpg";
+import Product_1 from "../../assets/images/bg-1.png";
+import Product_2 from "../../assets/images/bg-2.jpg";
+import Product_3 from "../../assets/images/bg-3.jpg";
+import Product_4 from "../../assets/images/bg-4.jpg";
+import Product_5 from "../../assets/images/bg-5.jpg";
+import Product_6 from "../../assets/images/bg-5.jpg";
 
 // products
-import Oppo_image_1 from "./images/oppo-img-1.png";
-import Oppo_image_2 from "./images/oppo-img-2.jpg";
-import Oppo_image_3 from "./images/oppo-img-3.jpg";
-import Oppo_image_4 from "./images/oppo-img-4.jpg";
+import Oppo_image_1 from "../../assets/images/oppo-img-1.png";
+import Oppo_image_2 from "../../assets/images/oppo-img-2.jpg";
+import Oppo_image_3 from "../../assets/images/oppo-img-3.jpg";
+import Oppo_image_4 from "../../assets/images/oppo-img-4.jpg";
 
-import Huawei_image_1 from "./images/huawei-p30-1.jpg";
-import Huawei_image_2 from "./images/huawei-p30-2.jpg";
-import Huawei_image_3 from "./images/huawei-p30-3.jpg";
-import Huawei_image_4 from "./images/huawei-p30-4.jpg";
+import Huawei_image_1 from "../../assets/images/huawei-p30-1.jpg";
+import Huawei_image_2 from "../../assets/images/huawei-p30-2.jpg";
+import Huawei_image_3 from "../../assets/images/huawei-p30-3.jpg";
+import Huawei_image_4 from "../../assets/images/huawei-p30-4.jpg";
 
-import samsung_a70_1 from "./images/samsung-a70-1.jpg";
-import samsung_a70_2 from "./images/samsung-a70-2.jpg";
-import samsung_a70_3 from "./images/samsung-a70-3.jpg";
-import samsung_a70_4 from "./images/samsung-a70-4.jpg";
+import samsung_a70_1 from "../../assets/images/samsung-a70-1.jpg";
+import samsung_a70_2 from "../../assets/images/samsung-a70-2.jpg";
+import samsung_a70_3 from "../../assets/images/samsung-a70-3.jpg";
+import samsung_a70_4 from "../../assets/images/samsung-a70-4.jpg";
 
-import nokia_72_1 from "./images/nokia-72-1.jpg";
-import nokia_72_2 from "./images/nokia-72-2.jpg";
-import nokia_72_3 from "./images/nokia-72-3.jpg";
-import nokia_72_4 from "./images/nokia-72-4.jpg";
+import nokia_72_1 from "../../assets/images/nokia-72-1.jpg";
+import nokia_72_2 from "../../assets/images/nokia-72-2.jpg";
+import nokia_72_3 from "../../assets/images/nokia-72-3.jpg";
+import nokia_72_4 from "../../assets/images/nokia-72-4.jpg";
 
-import vivi_v15_1 from "./images/vivo-v15-1.jpg";
-import vivi_v15_2 from "./images/vivo-v15-2.jpg";
-import vivi_v15_3 from "./images/vivo-v15-3.jpg";
-import vivi_v15_4 from "./images/vivo-v15-4.jpg";
+import vivi_v15_1 from "../../assets/images/vivo-v15-1.jpg";
+import vivi_v15_2 from "../../assets/images/vivo-v15-2.jpg";
+import vivi_v15_3 from "../../assets/images/vivo-v15-3.jpg";
+import vivi_v15_4 from "../../assets/images/vivo-v15-4.jpg";
 
-import redmi_note8_1 from "./images/redmi-note8-1.jpg";
-import redmi_note8_2 from "./images/redmi-note8-2.jpg";
-import redmi_note8_3 from "./images/redmi-note8-3.jpg";
-import redmi_note8_4 from "./images/redmi-note8-4.jpg";
+import redmi_note8_1 from "../../assets/images/redmi-note8-1.jpg";
+import redmi_note8_2 from "../../assets/images/redmi-note8-2.jpg";
+import redmi_note8_3 from "../../assets/images/redmi-note8-3.jpg";
+import redmi_note8_4 from "../../assets/images/redmi-note8-4.jpg";
 
-const SHOP_DATA = [
+const STORE_DATA = [
 	{
 		sys: {
 			id: 0
@@ -412,4 +412,4 @@ const SHOP_DATA = [
 	}
 ];
 
-export default SHOP_DATA;
+export default STORE_DATA;

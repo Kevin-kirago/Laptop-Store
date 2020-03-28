@@ -9,8 +9,8 @@ class App extends React.Component {
 	render() {
 		return (
 			<>
+				<Navigation />
 				<Switch>
-					<Navigation />
 					<Route to="/" component={Store} />
 				</Switch>
 			</>
