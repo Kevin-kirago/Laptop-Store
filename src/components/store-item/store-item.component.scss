@@ -1,0 +1,11 @@
+.store__item {
+	position: relative;
+	width: 100%;
+	min-height: 55rem;
+	background-color: #f7f7f7;
+
+	box-shadow: 0 0.5rem 5px 0 rgba(0, 0, 0, 0.2);
+
+	display: grid;
+	grid-template-rows: 22rem 1fr 10rem;
+}

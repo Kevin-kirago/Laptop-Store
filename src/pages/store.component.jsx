@@ -3,11 +3,20 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectProducts } from "../redux/products/product.selector";
 
+import "./store.component.scss";
+import StoreItem from "../components/store-item/store-item.component";
+
 const Store = ({ products }) => {
-	console.log(products);
-	return <div className="store">Store</div>;
+	return (
+		<div className="store">
+			{products.map(item => {
+				return <StoreItem key={item.sys.id} item={item} />;
+			})}
+		</div>
+	);
 };
 
+// pulling data from redux state manager
 const mapStateToProps = createStructuredSelector({
 	products: selectProducts
 });

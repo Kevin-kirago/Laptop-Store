@@ -1,0 +1,9 @@
+.store {
+	position: absolute;
+	width: 100%;
+	padding: 5rem 10vw;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5rem;
+}
