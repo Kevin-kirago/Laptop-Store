@@ -1,11 +1,31 @@
 .store__item {
 	position: relative;
 	width: 100%;
-	min-height: 55rem;
+	height: 55rem;
 	background-color: #f7f7f7;
 
 	box-shadow: 0 0.5rem 5px 0 rgba(0, 0, 0, 0.2);
 
 	display: grid;
-	grid-template-rows: 22rem 1fr 10rem;
+	grid-template-rows: 22rem 23rem 10rem;
+}
+
+.addToCartBtn {
+	position: absolute;
+	top: 20rem;
+	right: 0;
+	cursor: pointer;
+	width: 6rem;
+	height: 4rem;
+	background-color: #e74c3c;
+	border-top-left-radius: 10rem;
+	border-bottom-left-radius: 10rem;
+
+	display: grid;
+	align-content: center;
+	justify-items: center;
+
+	img {
+		filter: brightness(1) grayscale(0) invert(1);
+	}
 }

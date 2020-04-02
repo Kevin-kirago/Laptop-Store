@@ -4,6 +4,12 @@
 	color: #fff;
 	padding: 1rem 3rem;
 	text-decoration: none;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	border-radius: 10rem;
+	transition: all 0.3s ease-in;
+
+	&:hover,
+	&:active {
+		background-color: #c0392b;
+	}
 }
