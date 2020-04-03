@@ -2,14 +2,16 @@
 	display: inline-block;
 	background-color: #e74c3c;
 	color: #fff;
-	padding: 1rem 3rem;
+	padding: 1.3rem 3rem;
 	text-decoration: none;
 	font-size: 1.2rem;
 	border-radius: 10rem;
 	transition: all 0.3s ease-in;
+	border: none;
 
 	&:hover,
 	&:active {
+		outline: none;
 		background-color: #c0392b;
 	}
 }

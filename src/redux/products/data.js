@@ -8,7 +8,8 @@ import Product_5 from "../../assets/images/bg-5.jpg";
 const STORE_DATA = [
 	{
 		sys: {
-			id: 0
+			id: 0,
+			linkUrl: "store/huawei-matebook-x-pro"
 		},
 		fields: {
 			productName: "Huawei MateBook X Pro",
@@ -25,7 +26,8 @@ const STORE_DATA = [
 	},
 	{
 		sys: {
-			id: 1
+			id: 1,
+			linkUrl: "store/apple-macbook-pro-2018"
 		},
 		fields: {
 			productName: "Apple Macbook Pro 2018",
@@ -43,7 +45,8 @@ const STORE_DATA = [
 	},
 	{
 		sys: {
-			id: 2
+			id: 2,
+			linkUrl: "store/dell-xps-13"
 		},
 		fields: {
 			productName: "Dell XPS 13",
@@ -60,7 +63,8 @@ const STORE_DATA = [
 	},
 	{
 		sys: {
-			id: 3
+			id: 3,
+			linkUrl: "store/asus-zenbook-flip-s"
 		},
 		fields: {
 			productName: "Asus ZenBook Flip S",
@@ -77,7 +81,8 @@ const STORE_DATA = [
 	},
 	{
 		sys: {
-			id: 4
+			id: 4,
+			linkUrl: "store/samsung-notebook-9"
 		},
 		fields: {
 			productName: "Samsung Notebook 9",

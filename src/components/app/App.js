@@ -11,7 +11,7 @@ class App extends React.Component {
 			<>
 				<Navigation />
 				<Switch>
-					<Route to="/" component={Store} />
+					<Route path="/" component={Store} />
 				</Switch>
 			</>
 		);

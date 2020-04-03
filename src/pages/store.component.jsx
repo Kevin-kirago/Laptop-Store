@@ -1,24 +1,16 @@
 import React from "react";
-import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
-import { selectProducts } from "../redux/products/product.selector";
-
+import { Route } from "react-router-dom";
+import StoreCollection from "../components/store-collection/store-collection.component";
+import ProductView from "../components/product-view/product-view.component";
 import "./store.component.scss";
-import StoreItem from "../components/store-item/store-item.component";
 
-const Store = ({ products }) => {
+const Store = ({ match }) => {
 	return (
 		<div className="store">
-			{products.map(item => {
-				return <StoreItem key={item.sys.id} item={item} />;
-			})}
+			<Route exact path={`${match.path}`} component={StoreCollection} />
+			<Route path={`${match.path}store/:id`} component={ProductView} />
 		</div>
 	);
 };
 
-// pulling data from redux state manager
-const mapStateToProps = createStructuredSelector({
-	products: selectProducts
-});
-
-export default connect(mapStateToProps)(Store);
+export default Store;

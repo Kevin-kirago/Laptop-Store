@@ -1,10 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import addIcon from "../../assets/bxs-cart.svg";
 import "./store-item.component.scss";
 import { HeaderSection, MainSection, FooterSection } from "./store-item.styles";
 
-const StoreItem = ({ item }) => {
+const StoreItem = ({ item, history, match }) => {
 	return (
 		<div className="store__item">
 			<HeaderSection>
@@ -15,19 +14,27 @@ const StoreItem = ({ item }) => {
 				<p className="paragraph">{item.fields.description}</p>
 				<div className="content">
 					<div className="content__text">
-						<span className="content__text--icon">🧮</span>
+						<span className="content__text--icon" role="img" aria-label="calculations">
+							🧮
+						</span>
 						<div className="content__text--name">{item.fields.cpu}</div>
 					</div>
 					<div className="content__text">
-						<span className="content__text--icon">💻</span>
+						<span className="content__text--icon" role="img" aria-label="laptop screen">
+							💻
+						</span>
 						<div className="content__text--name">{item.fields.screen}</div>
 					</div>
 					<div className="content__text">
-						<span className="content__text--icon">🗃️</span>
+						<span className="content__text--icon" role="img" aria-label="files and folding">
+							🗃️
+						</span>
 						<div className="content__text--name">{item.fields.storage}</div>
 					</div>
 					<div className="content__text">
-						<span className="content__text--icon">💾</span>
+						<span className="content__text--icon" role="img" aria-label="storage">
+							💾
+						</span>
 						<div className="content__text--name">{item.fields.ram}</div>
 					</div>
 				</div>
@@ -37,9 +44,9 @@ const StoreItem = ({ item }) => {
 			</span>
 			<FooterSection>
 				<span>${item.fields.price}</span>
-				<Link className="btn" to="/">
+				<button className="btn" onClick={() => history.push(`${match.url}${item.sys.linkUrl}`)}>
 					View More
-				</Link>
+				</button>
 			</FooterSection>
 		</div>
 	);
