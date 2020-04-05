@@ -1,102 +1,26 @@
-// backgrounds images
-import Product_1 from "../../assets/images/bg-1.jpg";
-import Product_2 from "../../assets/images/bg-2.jpg";
-import Product_3 from "../../assets/images/bg-3.png";
-import Product_4 from "../../assets/images/bg-4.jpg";
-import Product_5 from "../../assets/images/bg-5.jpg";
-
-const STORE_DATA = [
-	{
-		sys: {
-			id: 0,
-			linkUrl: "store/huawei-matebook-x-pro"
+const product_data = {
+	huawei: {
+		id: 1,
+		title: "Huawei MateBook X Pro",
+		routeName: "/store/huawei-matebook-x-pro",
+		items: {
+			descrption:
+				"HUAWEI MateBook X Pro is a cost-effective laptop which supports fingerprint recognition. Equipped with a 13.9 inch LTPS display, brings your photos and videos to life. The powerful Windows 10 operating system makes it easy to check E-mail and manage digital files. Powered by Intel Core i5-8250U processor, ensures high performance. NVIDIA GeForce MX150 dedicated graphics, all of these give users a full suite for using dominance and offer users a truly seamless gaming experience.",
+			feature: {
+				main_features: {
+					os: "",
+					display: [],
+					processor: [],
+					storage: [],
+					devices: [],
+				},
+			},
+			images: [
+				"https://geardiary.com/wp-content/uploads/2018/03/DSCF3044-750x507.jpg",
+				"https://i.pinimg.com/originals/a1/31/41/a13141fbe7ce3273a4464d1daf005eb8.jpg",
+				"https://i.pinimg.com/564x/87/cd/9f/87cd9ffbdd989ac2e97500b0d61cffca.jpg",
+			],
 		},
-		fields: {
-			productName: "Huawei MateBook X Pro",
-			price: "1499",
-			stars: 4,
-			cpu: "Intel Core i7, 8th generation",
-			ram: "8GB RAM",
-			storage: "512 GB SSD",
-			screen: "13.9-inch, 3K (3,000 x 2,080)",
-			thumbnail: Product_1,
-			description:
-				"The Huawei MateBook X Pro is our pick for the best laptop money can buy in 2018. This is a gorgeously-designed laptop with a stunning screen."
-		}
 	},
-	{
-		sys: {
-			id: 1,
-			linkUrl: "store/apple-macbook-pro-2018"
-		},
-		fields: {
-			productName: "Apple Macbook Pro 2018",
-			price: "3199",
-			stars: 4,
-			image: "macbook-pro-15.jpg",
-			cpu: "6-core Intel i7, 8th generation",
-			ram: "16GB RAM",
-			storage: "1TB GB SSD",
-			screen: "15-inch Retina display",
-			thumbnail: Product_2,
-			description:
-				"If you're after the latest and greatest laptop from Apple, we suggest you look into the 2018 model of the 15-inch MacBook Pro with Touch Bar."
-		}
-	},
-	{
-		sys: {
-			id: 2,
-			linkUrl: "store/dell-xps-13"
-		},
-		fields: {
-			productName: "Dell XPS 13",
-			price: "1199",
-			stars: 4,
-			cpu: "Intel Core i7, 8th generation",
-			ram: "16GB RAM",
-			storage: "512 GB SSD",
-			screen: "13.3-inch, Full HD",
-			thumbnail: Product_3,
-			description:
-				"The Dell XPS 13 is an absolutely brilliant laptop. The 2018 version rocks an 8th-generation Intel Core i5 or i7 processor and a bezel-less ‘Infinity Edge’ display."
-		}
-	},
-	{
-		sys: {
-			id: 3,
-			linkUrl: "store/asus-zenbook-flip-s"
-		},
-		fields: {
-			productName: "Asus ZenBook Flip S",
-			price: "1399",
-			stars: 4,
-			cpu: "Intel Core i7, 8th generation",
-			ram: "16GB, 8GB RAM",
-			storage: "512 GB SSD",
-			screen: "13.3-inch, Full HD touchscreen",
-			thumbnail: Product_4,
-			description:
-				"Asus has struck gold with its new refresh of its ZenBook Flip S 2-in-1 laptop. With a new Kaby Lake R 8th-generation processor powering the device."
-		}
-	},
-	{
-		sys: {
-			id: 4,
-			linkUrl: "store/samsung-notebook-9"
-		},
-		fields: {
-			productName: "Samsung Notebook 9",
-			price: "1499",
-			stars: 4,
-			cpu: "Intel Core i7, 8th generation",
-			ram: "16GB RAM",
-			storage: "256 GB SSD",
-			screen: "15-inch, Full HD",
-			thumbnail: Product_5,
-			description:
-				"While it may not have the best keyboard in the world, the Samsung Notebook 9 is still one of the best laptops you can buy in 2018."
-		}
-	}
-];
-
-export default STORE_DATA;
+	macbook_pro: {},
+};

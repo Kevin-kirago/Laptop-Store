@@ -7,3 +7,17 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 5rem;
 }
+
+@media only screen and (max-width: 1000px) {
+	.store {
+		padding: 3rem 5rem;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.store {
+		padding: 3rem 2rem;
+		grid-template-columns: 1fr;
+	}
+}
