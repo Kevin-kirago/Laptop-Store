@@ -1,0 +1,69 @@
+.product {
+	position: relative;
+
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 60rem 15rem;
+
+	// typography
+	&__heading {
+		&--primary {
+			font-size: 3rem;
+			margin-bottom: 5px;
+
+			&-red {
+				font-size: 2.5rem;
+				color: #e74c3c;
+				margin-bottom: 1.5rem;
+			}
+		}
+
+		&--secondary {
+			color: #777;
+			font-size: 1.7rem;
+			font-weight: 700;
+			margin-bottom: 3px;
+		}
+	}
+
+	&__paragraph {
+		color: #707070;
+		font-size: 1.3rem;
+	}
+
+	&__content {
+		margin: 5px 0;
+	}
+
+	&__features {
+		padding: 2rem 8rem;
+	}
+
+	&__story {
+		padding: 2rem 8rem;
+		background-color: #f7f7f7;
+
+		button {
+			margin-top: 3rem;
+		}
+	}
+
+	&__thumbnail {
+		grid-column: 1 / -1;
+
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		&--img {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}
