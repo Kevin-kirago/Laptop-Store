@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import StoreCollection from "../components/store-collection/store-collection.component";
-import ProductView from "../components/product-view/product-view.component";
+import StoreCollection from "../../components/store-collection/store-collection.component";
+import ProductView from "../product-view/product-view.component";
 import "./store.component.scss";
 
 const Store = ({ match }) => {
