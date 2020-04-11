@@ -7,7 +7,7 @@ import StoreItem from "../store-item/store-item.component";
 
 const StoreCollectionDiv = styled.div`
 	position: relative;
-	padding: 4rem 10rem;
+	padding: 3rem 10rem;
 	width: 100%;
 
 	display: grid;
