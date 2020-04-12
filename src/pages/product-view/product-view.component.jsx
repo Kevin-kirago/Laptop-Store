@@ -19,7 +19,15 @@ const ProductView = ({ product }) => {
 			<div className="product__story">
 				<h1 className="product__heading--primary-red">{fields.productName}</h1>
 				<p className="product__paragraph">{fields.item.description}</p>
-				<span className="product__price">price: {fields.price}</span>
+				<div className="product__availability">
+					Availability: <span>{fields.availability}</span>
+				</div>
+				<div className="product__price">
+					Price: <span>${fields.price}</span>
+				</div>
+				<div className="product__rating">
+					Rating: <span>{fields.stars} / (7)</span>
+				</div>
 				<button className="btn">Add To Cart</button>
 			</div>
 			<div className="product__thumbnail">

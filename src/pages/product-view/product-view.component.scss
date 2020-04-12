@@ -31,6 +31,20 @@
 		font-size: 1.3rem;
 	}
 
+	&__price,
+	&__availability,
+	&__rating {
+		font-size: 1.3rem;
+		color: #707070;
+		margin: 1rem 2rem;
+
+		span {
+			font-size: 1.5rem;
+			font-weight: 700;
+			color: #e74c3c;
+		}
+	}
+
 	&__content {
 		margin: 5px 0;
 	}
@@ -40,11 +54,13 @@
 	}
 
 	&__story {
+		position: relative;
 		padding: 2rem 8rem;
 		background-color: #f7f7f7;
 
 		button {
 			margin-top: 3rem;
+			width: 100%;
 		}
 	}
 

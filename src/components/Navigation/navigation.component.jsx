@@ -1,6 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCartNav } from "../../redux/cart/cart.selector";
+import { NavLink } from "react-router-dom";
+
 import "./navigation.component.scss";
 import GithubLogo from "../../assets/bxl-github.svg";
 
@@ -27,7 +31,7 @@ const GithubAnchor = styled.a`
 	}
 `;
 
-const Navigation = () => {
+const Navigation = ({ hidden }) => {
 	const anchor = "https://github.com/Kevin-kirago/phone-store";
 
 	return (
@@ -41,12 +45,18 @@ const Navigation = () => {
 						Store
 					</NavLink>
 				</li>
-				<li className="navigation__item">
-					<span className="navigation__item--link">Cart&nbsp;[ 0 ]</span>
-				</li>
+				{hidden ? null : (
+					<li className="navigation__item">
+						<span className="navigation__item--link">Cart&nbsp;[ 0 ]</span>
+					</li>
+				)}
 			</ul>
 		</nav>
 	);
 };
 
-export default Navigation;
+const mapStateToProps = createStructuredSelector({
+	hidden: selectCartNav,
+});
+
+export default connect(mapStateToProps)(Navigation);
