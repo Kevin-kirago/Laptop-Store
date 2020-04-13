@@ -1,7 +1,7 @@
 import CartActionTypes from "./cart.types";
 
 const initial_state = {
-	cart: "hidden",
+	isOpen: false,
 	cart_items: [],
 };
 
@@ -10,7 +10,7 @@ const cartReducer = (state = initial_state, action) => {
 		case CartActionTypes.TOGGLE_CART:
 			return {
 				...state,
-				hidden: !state.cart,
+				isOpen: !state.isOpen,
 			};
 		default:
 			return state;

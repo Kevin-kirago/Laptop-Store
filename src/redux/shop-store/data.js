@@ -132,7 +132,7 @@ const STORE_DATA = [
 			stars: 4,
 			availability: "currently available",
 			cpu: "10th Generation Intel Core™ i7",
-			ram: "16GB LPDDR4x (3,733MHz)",
+			ram: "16GB LPDDR4x",
 			storage: "512 GB SSD",
 			screen: "13.3-inch FHD (1,920 x 1,080) touch",
 			thumbnail: Product_3,

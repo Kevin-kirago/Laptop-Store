@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
-import { createStructuredSelector } from "reselect";
-import { selectCartNav } from "../../redux/cart/cart.selector";
+import { toggleCart } from "../../redux/cart/cart.actions";
 import { NavLink } from "react-router-dom";
 
 import "./navigation.component.scss";
 import GithubLogo from "../../assets/bxl-github.svg";
+import cartIcon from "../../assets/bxs-cart-alt.svg";
+import Cart from "../cart/cart.component";
 
 const GithubAnchor = styled.a`
 	&:link,
@@ -31,8 +32,8 @@ const GithubAnchor = styled.a`
 	}
 `;
 
-const Navigation = ({ hidden }) => {
-	const anchor = "https://github.com/Kevin-kirago/phone-store";
+const Navigation = ({ toggleCart }) => {
+	const anchor = "https://github.com/Kevin-kirago/Laptop-Store";
 
 	return (
 		<nav className="navigation">
@@ -45,18 +46,21 @@ const Navigation = ({ hidden }) => {
 						Store
 					</NavLink>
 				</li>
-				{hidden ? null : (
-					<li className="navigation__item">
-						<span className="navigation__item--link">Cart&nbsp;[ 0 ]</span>
-					</li>
-				)}
+				<li className="navigation__item" onClick={toggleCart}>
+					<span className="navigation__item--link">
+						<img src={cartIcon} alt="cart-icon" />[ 0 ]
+					</span>
+				</li>
 			</ul>
+			<Cart />
 		</nav>
 	);
 };
 
-const mapStateToProps = createStructuredSelector({
-	hidden: selectCartNav,
-});
+const mapDispatchToProps = (dispatchEvent) => {
+	return {
+		toggleCart: () => dispatchEvent(toggleCart()),
+	};
+};
 
-export default connect(mapStateToProps)(Navigation);
+export default connect(null, mapDispatchToProps)(Navigation);

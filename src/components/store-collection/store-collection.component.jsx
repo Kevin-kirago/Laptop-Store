@@ -7,7 +7,7 @@ import StoreItem from "../store-item/store-item.component";
 
 const StoreCollectionDiv = styled.div`
 	position: relative;
-	padding: 3rem 10rem;
+	padding: 0rem 5rem;
 	width: 100%;
 
 	display: grid;
@@ -15,12 +15,11 @@ const StoreCollectionDiv = styled.div`
 	grid-gap: 5rem;
 
 	@media only screen and (max-width: 1000px) {
-		padding: 3rem 5rem;
+		padding: 0rem;
 		grid-template-columns: repeat(2, 1fr);
 	}
 
 	@media only screen and (max-width: 600px) {
-		padding: 3rem 2rem;
 		grid-template-columns: 1fr;
 	}
 `;
