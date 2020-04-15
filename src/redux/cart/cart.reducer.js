@@ -1,4 +1,5 @@
 import CartActionTypes from "./cart.types";
+import { addItemToCart } from "./cart.utils";
 
 const initial_state = {
 	isOpen: false,
@@ -11,6 +12,11 @@ const cartReducer = (state = initial_state, action) => {
 			return {
 				...state,
 				isOpen: !state.isOpen,
+			};
+		case CartActionTypes.ADD_ITEM:
+			return {
+				...state,
+				cart_items: addItemToCart(state.cart_items, action.payload),
 			};
 		default:
 			return state;
