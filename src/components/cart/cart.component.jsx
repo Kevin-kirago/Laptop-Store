@@ -25,9 +25,16 @@ class Cart extends React.Component {
 						</div>
 					</div>
 					<div className="cart__shelf">
-						{this.props.items.map((item) => (
-							<CartItem key={item.id} item={item} />
-						))}
+						{this.props.items.length >= 1 ? (
+							this.props.items.map((item) => <CartItem key={item.id} item={item} />)
+						) : (
+							<div className="cart__shelf-text">
+								Add some products in the cart
+								<span role="img" aria-label="shop-emoji">
+									🛒
+								</span>
+							</div>
+						)}
 					</div>
 					<div className="cart__footer">
 						<div className="cart__total">

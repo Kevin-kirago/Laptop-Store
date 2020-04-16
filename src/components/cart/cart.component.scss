@@ -9,6 +9,11 @@
 			width: 1rem;
 			background-color: #111;
 		}
+
+		&::-webkit-scrollbar-thumb {
+			border-radius: 4px;
+			background-color: #444;
+		}
 	}
 
 	&__header {
@@ -40,6 +45,15 @@
 	&__shelf {
 		position: relative;
 		padding-bottom: 15rem;
+
+		&-text {
+			display: grid;
+			font-size: 1.5rem;
+			color: #fff;
+			height: 10rem;
+			align-content: center;
+			justify-items: center;
+		}
 	}
 
 	&__footer {

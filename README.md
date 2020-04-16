@@ -8,9 +8,10 @@ This is a simple ecommerce store prototype shows how React components and Redux 
 
 #### Features
 
+-   state management with redux
 -   Routing with react router
 -   Add, remove, clear products from the shopping cart
--   Data persistance with local storage
+-   Data persistance with local storage(redux-persist)
 -   Responsive design
 
 #### Available Scripts

@@ -10,8 +10,6 @@ const StoreItem = ({ item, history, match, dispatch }) => {
 		sys: { id, linkUrl },
 	} = item;
 
-	const itemToAdd = { id, thumbnail, productName, price };
-
 	return (
 		<div className="store__item">
 			<HeaderSection>
@@ -47,7 +45,7 @@ const StoreItem = ({ item, history, match, dispatch }) => {
 					</div>
 				</div>
 			</MainSection>
-			<span className="addToCartBtn" onClick={() => dispatch(addItemToCart(itemToAdd))}>
+			<span className="addToCartBtn" onClick={() => dispatch(addItemToCart({ id, thumbnail, productName, price }))}>
 				<img src={addIcon} alt="add item to cart icon" />
 			</span>
 			<FooterSection>

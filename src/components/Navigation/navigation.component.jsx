@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 import { toggleCart } from "../../redux/cart/cart.actions";
 import { NavLink } from "react-router-dom";
 
@@ -8,6 +9,7 @@ import "./navigation.component.scss";
 import GithubLogo from "../../assets/bxl-github.svg";
 import cartIcon from "../../assets/bxs-cart-alt.svg";
 import Cart from "../cart/cart.component";
+import { selectCartItemsCount } from "../../redux/cart/cart.selector";
 
 const GithubAnchor = styled.a`
 	&:link,
@@ -32,7 +34,7 @@ const GithubAnchor = styled.a`
 	}
 `;
 
-const Navigation = ({ toggleCart }) => {
+const Navigation = ({ toggleCart, cartItemsCount }) => {
 	const anchor = "https://github.com/Kevin-kirago/Laptop-Store";
 
 	return (
@@ -48,7 +50,7 @@ const Navigation = ({ toggleCart }) => {
 				</li>
 				<li className="navigation__item" onClick={toggleCart}>
 					<span className="navigation__item--link">
-						<img src={cartIcon} alt="cart-icon" />[ 0 ]
+						<img src={cartIcon} alt="cart-icon" />[ {`${cartItemsCount}`} ]
 					</span>
 				</li>
 			</ul>
@@ -57,10 +59,14 @@ const Navigation = ({ toggleCart }) => {
 	);
 };
 
+const mapStateToProps = createStructuredSelector({
+	cartItemsCount: selectCartItemsCount,
+});
+
 const mapDispatchToProps = (dispatchEvent) => {
 	return {
 		toggleCart: () => dispatchEvent(toggleCart()),
 	};
 };
 
-export default connect(null, mapDispatchToProps)(Navigation);
+export default connect(mapStateToProps, mapDispatchToProps)(Navigation);
