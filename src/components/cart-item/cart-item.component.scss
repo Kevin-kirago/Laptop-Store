@@ -96,3 +96,9 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.cart__item {
+		width: 100%;
+	}
+}

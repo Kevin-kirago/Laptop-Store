@@ -83,3 +83,19 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 1000px) {
+	.product {
+		grid-template-columns: 1fr;
+		grid-template-rows: min-content min-content min-content;
+
+		&__features {
+			padding: 2rem;
+		}
+
+		&__story {
+			grid-row: 1 / 2;
+			padding: 3rem 2rem;
+		}
+	}
+}

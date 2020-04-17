@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { selectCartDrawer, selectCartItems } from "../../redux/cart/cart.selector";
+import { selectCartDrawer, selectCartItems, selectCartTotal } from "../../redux/cart/cart.selector";
 import { toggleCart } from "../../redux/cart/cart.actions";
 
 import CartItem from "../cart-item/cart-item.component";
@@ -39,7 +39,7 @@ class Cart extends React.Component {
 					<div className="cart__footer">
 						<div className="cart__total">
 							<span className="cart__total--text">SUBTOTAL</span>
-							<span className="cart__total--value">$180.00</span>
+							<span className="cart__total--value">${`${this.props.cartTotal}`}</span>
 						</div>
 						<div className="btn">Checkout</div>
 					</div>
@@ -52,6 +52,7 @@ class Cart extends React.Component {
 const mapStateToProps = createStructuredSelector({
 	drawerIsOpen: selectCartDrawer,
 	items: selectCartItems,
+	cartTotal: selectCartTotal,
 });
 
 export default connect(mapStateToProps)(Cart);

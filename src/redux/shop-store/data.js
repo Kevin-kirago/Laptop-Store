@@ -69,7 +69,7 @@ const STORE_DATA = [
 			linkUrl: "store/apple-macbook-pro-2019",
 		},
 		fields: {
-			productName: "MacBook Pro (16-inch, 2019)",
+			productName: "MacBook Pro (2019)",
 			price: "2399",
 			stars: 4,
 			availability: "currently available",
