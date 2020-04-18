@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { addItemToCart } from "../../redux/cart/cart.actions";
 import { selectProductItem } from "../../redux/shop-store/shop-store.selector";
-import "./product-view.component.scss";
+import "./product-view.styles.scss";
 
 const ProductView = ({ product, addItem }) => {
 	const {

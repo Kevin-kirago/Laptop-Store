@@ -5,7 +5,7 @@ import { createStructuredSelector } from "reselect";
 import { toggleCart } from "../../redux/cart/cart.actions";
 import { NavLink } from "react-router-dom";
 
-import "./navigation.component.scss";
+import "./navigation.styles.scss";
 import GithubLogo from "../../assets/bxl-github.svg";
 import cartIcon from "../../assets/bxs-cart-alt.svg";
 import Cart from "../cart/cart.component";

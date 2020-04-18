@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { addItemToCart, removeItemFromCart, clearItemFromCart } from "../../redux/cart/cart.actions";
 
-import "./cart-item.component.scss";
+import "./cart-item.styles.scss";
 import addBtn from "../../assets/bx-plus.svg";
 import minBtn from "../../assets/bx-minus.svg";
 import trashBtn from "../../assets/bx-trash.svg";

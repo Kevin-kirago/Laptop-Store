@@ -7,7 +7,7 @@ import { toggleCart } from "../../redux/cart/cart.actions";
 import CartItem from "../cart-item/cart-item.component";
 import closeIcon from "../../assets/bx-x.svg";
 import { CartDrawer } from "./cart.styles";
-import "./cart.component.scss";
+import "./cart.styles.scss";
 
 class Cart extends React.Component {
 	render() {
