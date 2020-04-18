@@ -1,12 +1,10 @@
 import React from "react";
-
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { toggleCart } from "../../redux/cart/cart.actions";
 import { NavLink } from "react-router-dom";
 
 import "./navigation.styles.scss";
-import { GithubAnchor } from "./navigation.styles";
 import GithubLogo from "../../assets/bxl-github.svg";
 import cartIcon from "../../assets/bxs-cart-alt.svg";
 import Cart from "../cart/cart.component";
@@ -17,9 +15,9 @@ const Navigation = ({ toggleCart, cartItemsCount }) => {
 
 	return (
 		<nav className="navigation">
-			<GithubAnchor href={anchor} target="_blank">
+			<a className="navigation__anchor" href={anchor} target="_blank">
 				<img src={GithubLogo} alt="github-logo" />
-			</GithubAnchor>
+			</a>
 			<ul className="navigation__list">
 				<li className="navigation__item">
 					<NavLink to="/" className="navigation__item--link">
