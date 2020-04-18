@@ -2,14 +2,14 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./App.scss";
 
-// import Navigation from "./components/navigation/navigation.component.jsx";
+import Navigation from "./components/navigation/navigation.component.jsx";
 import Store from "./pages/store/store.component";
 
 class App extends React.Component {
 	render() {
 		return (
 			<>
-				{/* <Navigation /> */}
+				<Navigation />
 				<Switch>
 					<Route path="/" component={Store} />
 				</Switch>

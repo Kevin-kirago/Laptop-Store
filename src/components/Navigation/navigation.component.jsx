@@ -1,38 +1,16 @@
 import React from "react";
-import styled from "styled-components";
+
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { toggleCart } from "../../redux/cart/cart.actions";
 import { NavLink } from "react-router-dom";
 
 import "./navigation.styles.scss";
+import { GithubAnchor } from "./navigation.styles";
 import GithubLogo from "../../assets/bxl-github.svg";
 import cartIcon from "../../assets/bxs-cart-alt.svg";
 import Cart from "../cart/cart.component";
 import { selectCartItemsCount } from "../../redux/cart/cart.selector";
-
-const GithubAnchor = styled.a`
-	&:link,
-	&:visited {
-		position: relative;
-		background-color: #000;
-		height: 100%;
-		width: 10rem;
-		clip-path: polygon(0 0, 0% 100%, 100% 0);
-
-		@media only screen and (max-width: 600px) {
-			width: 7rem;
-		}
-	}
-
-	img {
-		position: absolute;
-		top: 35%;
-		left: 35%;
-		transform: translate(-50%, -50%);
-		filter: grayscale(1) brightness(0) invert(1);
-	}
-`;
 
 const Navigation = ({ toggleCart, cartItemsCount }) => {
 	const anchor = "https://github.com/Kevin-kirago/Laptop-Store";
