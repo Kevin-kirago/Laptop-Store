@@ -3,13 +3,14 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { toggleCart } from "../../redux/cart/cart.actions";
 import { NavLink } from "react-router-dom";
-import GithubLogo from "../../assets/bxl-github.svg";
-import cartIcon from "../../assets/bxs-cart-alt.svg";
+
 import Cart from "../cart/cart.component";
 import { selectCartItemsCount } from "../../redux/cart/cart.selector";
+import { GithubAnchor } from "./navbar.styles";
 
 import "./navbar.styles.scss";
-import { GithubAnchor } from "./navbar.styles";
+import GithubLogo from "../../assets/bxl-github.svg";
+import cartIcon from "../../assets/bxs-cart-alt.svg";
 
 const Navbar = ({ toggleCart, cartItemsCount }) => {
 	return (
